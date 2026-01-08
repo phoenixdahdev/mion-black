@@ -57,7 +57,7 @@ export default function Footer() {
           MION BLACK
         </h1>
         <div className="flex justify-between font-mono text-xs uppercase text-muted-foreground">
-          <span>© 2025</span>
+          <span>© 2026</span>
           <span>All Rights Reserved</span>
         </div>
       </div>

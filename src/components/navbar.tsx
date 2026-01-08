@@ -50,7 +50,10 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-12">
-          <Link href="#" className="hover:opacity-50 transition-opacity">
+          <Link
+            href="/collections"
+            className="hover:opacity-50 transition-opacity"
+          >
             Collections
           </Link>
           <Link href="#" className="hover:opacity-50 transition-opacity">
@@ -85,7 +88,7 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-8 text-center font-serif text-3xl">
               <motion.div variants={linkVariants}>
-                <Link href="#" onClick={toggleMenu}>
+                <Link href="/collections" onClick={toggleMenu}>
                   Collections
                 </Link>
               </motion.div>
