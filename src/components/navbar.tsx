@@ -56,10 +56,13 @@ export default function Navbar() {
           >
             Collections
           </Link>
-          <Link href="#" className="hover:opacity-50 transition-opacity">
+          <Link
+            href="/lookbook"
+            className="hover:opacity-50 transition-opacity"
+          >
             Lookbook
           </Link>
-          <Link href="#" className="hover:opacity-50 transition-opacity">
+          <Link href="/about" className="hover:opacity-50 transition-opacity">
             About
           </Link>
         </div>
@@ -93,12 +96,12 @@ export default function Navbar() {
                 </Link>
               </motion.div>
               <motion.div variants={linkVariants}>
-                <Link href="#" onClick={toggleMenu}>
+                <Link href="/lookbook" onClick={toggleMenu}>
                   Lookbook
                 </Link>
               </motion.div>
               <motion.div variants={linkVariants}>
-                <Link href="#" onClick={toggleMenu}>
+                <Link href="/about" onClick={toggleMenu}>
                   About
                 </Link>
               </motion.div>
