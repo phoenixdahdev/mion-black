@@ -1,40 +1,52 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
-import { useRef } from "react";
+import { useState, useEffect } from "react";
+import { collections } from "@/data/collections";
+
+const firstCollection = collections[0];
+const images = firstCollection?.runwayLooks?.slice(0, 4) || [];
 
 export default function Hero() {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
+  const [index, setIndex] = useState(0);
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <section
-      ref={containerRef}
-      className="relative h-screen w-full overflow-hidden bg-black"
-    >
-      <motion.div style={{ y }} className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1742472295279-d6652f7a89d0?q=80&w=2070&auto=format&fit=crop"
-          alt="MION BLACK Concrete Silhouette"
-          fill
-          className="object-cover opacity-70"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/60" />
-      </motion.div>
+    <section className="relative h-screen w-full overflow-hidden bg-black">
+      <AnimatePresence mode="popLayout">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="absolute inset-0 z-0"
+        >
+          {/* 
+              Note: Using key={index} on motion.div ensures unmount/mount transition. 
+              The Image component optimizes loading, but for smooth crossfade 
+              we rely on AnimatePresence processing the key change.
+            */}
+          <Image
+            src={images[index]}
+            alt="MION BLACK Campaign"
+            fill
+            className="object-cover opacity-60"
+            priority
+          />
+        </motion.div>
+      </AnimatePresence>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/60 z-0" />
 
       <div className="relative z-10 flex h-full flex-col justify-end p-6 md:p-12">
-        <motion.div
-          style={{ opacity }}
-          className="flex flex-col items-start gap-2"
-        >
+        <div className="flex flex-col items-start gap-2">
           <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -57,7 +69,7 @@ export default function Hero() {
           >
             Not worn. Carried.
           </motion.p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

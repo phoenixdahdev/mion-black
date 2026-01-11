@@ -56,6 +56,12 @@ export default function Lookbook() {
         text="FLUID DYNAMICS"
         align="right"
       />
+      <LookbookItem
+        src="/collections/mionblack-orginal/IMG_20260109_124133.png"
+        alt="MIONBLACK ORIGINAL"
+        text="ORIGINAL / COMING SOON"
+        align="left"
+      />
     </section>
   );
 }

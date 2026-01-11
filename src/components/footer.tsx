@@ -25,14 +25,29 @@ export default function Footer() {
             <h4 className="font-mono text-xs uppercase text-muted-foreground">
               Socials
             </h4>
-            <a href="#" className="hover:line-through">
+            <a
+              href="https://instagram.com/MIONBLACKLTD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:line-through"
+            >
               Instagram
             </a>
-            <a href="#" className="hover:line-through">
-              Twitter
+            <a
+              href="https://x.com/MIONBLACKLTD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:line-through"
+            >
+              X
             </a>
-            <a href="#" className="hover:line-through">
-              Are.na
+            <a
+              href="https://tiktok.com/@MIONBLACKLTD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:line-through"
+            >
+              Tik Tok
             </a>
           </div>
           <div className="flex flex-col gap-4">

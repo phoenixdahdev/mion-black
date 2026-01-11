@@ -145,7 +145,7 @@ export default function AboutPage() {
             <div>
               <h3 className="font-serif text-2xl mb-4">Contact</h3>
               <p className="font-mono text-sm text-muted-foreground">
-                inquiries@mionblack.com
+                mionblackltd@gmail.com
                 <br />
                 +49 00 0000 0000
               </p>
