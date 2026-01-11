@@ -37,7 +37,16 @@ export const collections = [
                 title: "Jersey Drape",
                 price: "₦29,999",
                 image: "/collections/hybrid-jersey/1001729517.jpg",
-            }
+            },
+            { id: "hj-05", title: "Archive Sketch", image: "/collections/2/1001289937.png" },
+            { id: "hj-06", title: "Process Scan", image: "/collections/2/1001292459.png" },
+            { id: "hj-07", title: "Fabric Detail", image: "/collections/2/1001304803.png" },
+            { id: "hj-08", title: "Studio Shot 01", image: "/collections/2/1001729765.jpg" },
+            { id: "hj-09", title: "Studio Shot 02", image: "/collections/2/1001729766.jpg" },
+            { id: "hj-10", title: "Studio Shot 03", image: "/collections/2/1001729767.jpg" },
+            { id: "hj-11", title: "Studio Shot 04", image: "/collections/2/1001729775.jpg" },
+            { id: "hj-12", title: "Studio Shot 05", image: "/collections/2/1001729776.jpg" },
+            { id: "hj-13", title: "Studio Shot 06", image: "/collections/2/1001729777.jpg" }
         ],
         runwayLooks: [
             "/collections/hybrid-jersey/1001729584.jpg",
@@ -77,6 +86,32 @@ export const collections = [
                 title: "Graphic Tee",
                 price: "₦24,999",
                 image: "/collections/street-legacy/IMG_20260109_122721.jpg",
+            },
+            {
+                id: "street-03",
+                title: "Urban Layer",
+                price: "₦28,000",
+                image: "/collections/street-legacy/IMG_20260109_123321.jpg",
+            },
+            {
+                id: "street-04",
+                title: "Street Silhouette",
+                image: "/collections/street-legacy/IMG_20260109_123647.png",
+            },
+            {
+                id: "street-05",
+                title: "Raw Edge",
+                image: "/collections/street-legacy/IMG_20260109_123720.png",
+            },
+            {
+                id: "street-06",
+                title: "Concrete Texture",
+                image: "/collections/street-legacy/IMG_20260109_123818.png",
+            },
+            {
+                id: "street-07",
+                title: "City Walker",
+                image: "/collections/street-legacy/IMG_20260109_123838.jpg",
             }
         ],
         details: []
@@ -90,7 +125,38 @@ export const collections = [
         narrative: "Revisiting the core codes of the brand. Pure structure, absence of noise.",
         comingSoon: true,
         launchDate: "2026-02-01T00:00:00", // Example date
-        looks: [],
+        looks: [
+            {
+                id: "orig-01",
+                title: "Core Structure",
+                image: "/collections/mionblack-orginal/IMG_20260109_124507.png",
+            },
+            {
+                id: "orig-02",
+                title: "Origin Form",
+                image: "/collections/mionblack-orginal/IMG_20260109_124524.png",
+            },
+            {
+                id: "orig-03",
+                title: "Black Edition",
+                image: "/collections/mionblack-orginal/IMG_20260109_124555.png",
+            },
+            {
+                id: "orig-04",
+                title: "Genesis Layer",
+                image: "/collections/mionblack-orginal/IMG_20260109_124728.png",
+            },
+            {
+                id: "orig-05",
+                title: "Primary Cut",
+                image: "/collections/mionblack-orginal/IMG_20260109_124818.png",
+            },
+            {
+                id: "orig-06",
+                title: "Foundation Piece",
+                image: "/collections/mionblack-orginal/IMG_20260109_125004.png",
+            }
+        ],
         details: []
     }
 ];

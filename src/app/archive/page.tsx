@@ -51,31 +51,30 @@ export default function ArchivePage() {
 
       {/* Gallery Grid */}
       <section className="px-6 pb-24 md:px-12">
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {allImages.map((img, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.05 }}
-              className="relative break-inside-avoid group"
+              transition={{ delay: idx * 0.05, duration: 0.5 }}
+              className="relative aspect-[3/4] overflow-hidden bg-muted group"
             >
               <Link
                 href={`/collections/${img.slug}`}
-                className="block relative"
+                className="block w-full h-full relative"
               >
                 <Image
                   src={img.src}
                   alt={img.title}
-                  width={800}
-                  height={1200}
-                  className="w-full h-auto object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
+                  fill
+                  className="object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
                 <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <span className="text-xs font-mono text-white uppercase tracking-widest bg-black/50 px-2 py-1">
-                    {img.season} — {img.title}
+                    {img.season}
                   </span>
                 </div>
               </Link>
