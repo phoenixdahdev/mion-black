@@ -55,7 +55,7 @@ export default function Hero() {
             transition={{ delay: 0.8 }}
             className="max-w-md font-sans text-sm tracking-widest text-white/80 uppercase md:text-base"
           >
-            Silence. Form. Void.
+            Not worn. Carried.
           </motion.p>
         </motion.div>
       </div>

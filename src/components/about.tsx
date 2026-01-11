@@ -19,9 +19,8 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="font-serif text-3xl leading-snug text-foreground md:text-5xl lg:text-6xl"
           >
-            MION BLACK is not a label. It is an exploration of the void. We
-            strip away the unnecessary to reveal the essential structure of
-            existence.
+            MIONBLACK is fashion through an artist’s lens. Each piece is
+            designed to carry emotion, structure, and intent.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -31,12 +30,12 @@ export default function About() {
             className="mt-12 flex gap-8"
           >
             <p className="max-w-xs text-sm text-muted-foreground">
-              Inspired by the brutalism of modern architecture and the fluidity
-              of digital noise.
+              Every drop is rooted in a story—translated into form, fabric, and
+              silhouette. Built on discipline and restraint, the brand removes
+              excess to let meaning remain.
             </p>
             <p className="max-w-xs text-sm text-muted-foreground">
-              We create garments for the post-internet age, where silhouette
-              dictates identity.
+              This is clothing not just to be worn, but to be felt.
             </p>
           </motion.div>
         </div>

@@ -4,13 +4,11 @@ export const collections = [
         season: "FW25",
         title: "THE VOID WALKING",
         heroImage: "https://images.unsplash.com/photo-1742472295279-d6652f7a89d0?q=80&w=2070&auto=format&fit=crop",
-        description: "Deconstructing the self through concrete and shadow.",
+        description: "MIONBLACK is built in the space between survival and vision.",
         narrative: `
-      The Fall/Winter 2025 collection, "The Void Walking," explores the space between presence and absence. 
-      Inspired by brutalist architecture and the concept of negative space, we stripped away the superfluous to reveal the essential structure of the garment—and the wearer.
-      
-      Fabrics are dense, absorbing light rather than reflecting it. Wool felts, structured cottons, and oxidized metals form a protective shell against the noise of the modern world.
-      This is not clothing for the faint of heart. It is an armor for the soul.
+      Rooted in discipline, pressure, and self-belief, each piece is designed as a response to resistance. 
+      The weight of the fabric mirrors the weight of ambition. Nothing is accidental. Nothing is decorative without purpose.
+      Inspired by urban tension, raw structure, and the silence that exists inside chaos, MIONBLACK strips fashion down to its core.
     `,
         looks: [
             {
@@ -42,7 +40,7 @@ export const collections = [
             "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=2000&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2000&auto=format&fit=crop",
         ],
-        materials: "Sourced from the industrial districts of Japan, our FW25 wool felt is boiled three times to achieve a rigid, sculptural density. Contrast panels use oxidized treated linen, providing a raw, decaying texture that softens with wear.",
+        materials: "Fabrics are intentional—dense cottons, reinforced knits, engineered jerseys—chosen to hold shape, absorb impact, and move with authority. These are garments built to endure motion, time, and scrutiny.",
         details: [
             "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=2000&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=2000&auto=format&fit=crop"

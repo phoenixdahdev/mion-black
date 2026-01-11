@@ -40,21 +40,17 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="font-serif text-3xl leading-snug md:text-5xl lg:text-6xl"
             >
-              MION BLACK is not a label. It is an exploration of the void. We
-              strip away the unnecessary to reveal the essential structure of
-              existence.
+              MIONBLACK is fashion through an artist’s lens. Each piece is
+              designed to carry emotion, structure, and intent.
             </motion.p>
             <div className="mt-12 flex flex-col md:flex-row gap-8 text-muted-foreground text-sm leading-relaxed">
               <p className="max-w-md">
-                Founded in 2024, the studio operates at the intersection of
-                brutalist architecture and digital decay. We believe that true
-                luxury lies in silence, in the absence of noise, and in the
-                weight of material reality.
+                Every drop is rooted in a story—translated into form, fabric,
+                and silhouette. Built on discipline and restraint, the brand
+                removes excess to let meaning remain.
               </p>
               <p className="max-w-md">
-                Every garment is an architectural proposition. A shelter. An
-                armor. A statement of intent in a world dissolving into the
-                ephemeral.
+                This is clothing not just to be worn, but to be felt.
               </p>
             </div>
           </div>
@@ -71,10 +67,15 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="font-serif text-2xl leading-relaxed md:text-4xl">
-              The void is not emptiness. It is potential. In the silence between
-              thoughts, true form emerges. We embrace the negative space,
-              allowing it to dictate the silhouette rather than filling it with
-              noise.
+              MIONBLACK is built in the space between survival and vision.
+              Between where we come from—and where we refuse to remain. Rooted
+              in discipline, pressure, and self-belief, each piece is designed
+              as a response to resistance. The weight of the fabric mirrors the
+              weight of ambition. Nothing is accidental. Nothing is decorative
+              without purpose. Inspired by urban tension, raw structure, and the
+              silence that exists inside chaos, MIONBLACK strips fashion down to
+              its core. Clean forms. Controlled aggression. A presence that
+              speaks without noise.
             </p>
           </div>
         </div>
@@ -91,17 +92,21 @@ export default function AboutPage() {
           <div>
             <div className="flex flex-col gap-8">
               <p className="font-serif text-2xl leading-relaxed md:text-3xl text-foreground">
-                Hand-finished seams. Raw hems. Fabrics that age and evolve. We
-                reject the pristine sterility of mass production in favor of the
-                beautiful imperfection of the human hand.
+                Fabrics are intentional—dense cottons, reinforced knits,
+                engineered jerseys—chosen to hold shape, absorb impact, and move
+                with authority. These are garments built to endure motion, time,
+                and scrutiny.
               </p>
-              <p className="max-w-md text-sm text-muted-foreground leading-relaxed">
-                Each garment undergoes a rigorous process of deconstruction and
-                reconstruction. We use boiling techniques for wools and
-                oxidation for linens, creating textures that feel ancient yet
-                futuristic. A MION BLACK piece is a living document of its
-                creation.
-              </p>
+              <div className="max-w-md text-sm text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  MIONBLACK is not trend-driven. It is pressure-tested. This is
+                  clothing for those who move forward regardless of conditions.
+                </p>
+                <p>
+                  Not to impress—but to assert. MIONBLACK is not worn. It is
+                  carried.
+                </p>
+              </div>
             </div>
           </div>
         </div>

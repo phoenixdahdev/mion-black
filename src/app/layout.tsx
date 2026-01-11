@@ -20,7 +20,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "MION BLACK",
-  description: "Digital Avant-Garde.",
+  description: "Clothing not just to be worn, but to be felt.",
 };
 
 export default function RootLayout({
