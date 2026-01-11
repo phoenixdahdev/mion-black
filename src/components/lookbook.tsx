@@ -26,7 +26,7 @@ function LookbookItem({
   return (
     <div ref={ref} className="relative h-[120vh] w-full overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0 h-[140%] w-full">
-        <Image src={src} alt={alt} fill className="object-cover" />
+        <Image src={src} alt={alt} fill className="object-cover grayscale" />
       </motion.div>
       <div
         className={`absolute inset-0 flex items-center ${
@@ -45,16 +45,16 @@ export default function Lookbook() {
   return (
     <section className="bg-background">
       <LookbookItem
-        src="https://images.unsplash.com/photo-1631428431420-c47b5d01c667?fm=jpg&q=60&w=3000"
-        alt="Editorial 01"
-        text="ABSENCE OF COLOR"
+        src="/collections/hybrid-jersey/1001686981.jpg"
+        alt="Hybrid Jersey Collection"
+        text="HYBRID JERSEY"
         align="left"
       />
       <LookbookItem
-        src="https://images.unsplash.com/photo-1725121225009-3d7e049fb8a6?fm=jpg&q=60&w=3000"
-        alt="Editorial 02"
-        text="FLUID DYNAMICS"
-        align="right"
+        src="/collections/street-legacy/IMG_20260109_123618.png"
+        alt="Street Legacy"
+        text="STREET LEGACY"
+        align="left"
       />
       <LookbookItem
         src="/collections/mionblack-orginal/IMG_20260109_124133.png"

@@ -4,35 +4,21 @@ import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
+import { collections } from "@/data/collections";
+
 const items = [
-  {
-    id: 1,
-    title: "STRUCTURED MASK",
-    price: "USD 450",
-    image:
-      "https://images.unsplash.com/photo-1761428961720-38db3883826b?fm=jpg&q=60&w=3000",
-  },
-  {
-    id: 2,
-    title: "VOID RUNNER",
-    price: "USD 890",
-    image:
-      "https://images.unsplash.com/photo-1763913087466-31b41652ff26?fm=jpg&q=60&w=3000",
-  },
-  {
-    id: 3,
-    title: "MESH DRAPE",
-    price: "USD 320",
-    image:
-      "https://images.unsplash.com/photo-1759769610393-b72d6c4771a7?fm=jpg&q=60&w=3000",
-  },
-  {
-    id: 4,
-    title: "MONOLITH BOOT",
-    price: "USD 1200",
-    image:
-      "https://images.unsplash.com/photo-1763913087466-31b41652ff26?fm=jpg&q=60&w=3000", // Reusing for demo, ideally different
-  },
+  ...collections[0].looks.slice(0, 2).map((look) => ({
+    id: look.id,
+    title: look.title,
+    price: look.price || "Contact for Price",
+    image: look.image,
+  })),
+  ...collections[1].looks.slice(0, 2).map((look) => ({
+    id: look.id,
+    title: look.title,
+    price: look.price || "Contact for Price", // Street Legacy items
+    image: look.image,
+  })),
 ];
 
 export default function FeaturedCollection() {

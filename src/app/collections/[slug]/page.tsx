@@ -126,9 +126,14 @@ export default function CollectionDetailPage() {
                     />
                     <div className="absolute inset-0 bg-black/0 transition-colors group-hover:bg-black/20" />
                     <div className="absolute bottom-6 left-6 opacity-0 transition-opacity group-hover:opacity-100">
-                      <span className="font-mono text-xs uppercase tracking-widest text-white">
+                      <span className="font-mono text-xs uppercase tracking-widest text-white block">
                         {look.title}
                       </span>
+                      {look.price && (
+                        <span className="font-mono text-xs text-white/70 block mt-1">
+                          {look.price}
+                        </span>
+                      )}
                     </div>
                   </div>
                 ))}

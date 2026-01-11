@@ -17,21 +17,25 @@ export const collections = [
             {
                 id: "look-01",
                 title: "Tech Shell Coat",
+                price: "₦29,999",
                 image: "/collections/hybrid-jersey/1001686981.jpg",
             },
             {
                 id: "look-02",
                 title: "Hybrid Blazer",
+                price: "₦29,999",
                 image: "/collections/hybrid-jersey/1001693740.jpg",
             },
             {
                 id: "look-03",
                 title: "Ballistic Trouser",
+                price: "₦29,999",
                 image: "/collections/hybrid-jersey/1001693760.jpg",
             },
             {
                 id: "look-04",
                 title: "Jersey Drape",
+                price: "₦29,999",
                 image: "/collections/hybrid-jersey/1001729517.jpg",
             }
         ],
@@ -50,36 +54,31 @@ export const collections = [
         ]
     },
     {
-        slug: "fw24",
-        season: "FW24",
-        title: "ECHOES OF BRUTALISM",
-        heroImage: "https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=2000&auto=format&fit=crop",
-        description: "Texture as narrative. The noise of the city frozen in fabric.",
+        slug: "street-legacy",
+        season: "STREET",
+        title: "STREET LEGACY",
+        heroImage: "/collections/street-legacy/IMG_20260109_123618.png",
+        description: "Raw energy meets refined structure.",
         narrative: `
-      FW24 delves into the textures of the urban environment. Concrete, rust, glass. 
-      The collection mirrors these elements through heavy textures, distressed finishes, and sharp, angular tailoring.
+      Street Legacy is an ode to the pavement, the hustle, and the raw energy of the block.
+      It reinterprets the codes of streetwear through a lens of high-end craftsmanship.
+      Bold graphics, oversized silhouettes, and rugged materials that tell a story of survival and triumph.
+      Every piece is a chapter in the book of the streets, written in thread and fabric.
     `,
-        looks: [], // Placeholder for older collections
-        details: []
-    },
-    {
-        slug: "ss24",
-        season: "SS24",
-        title: "STATIC NOISE",
-        heroImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=2000&auto=format&fit=crop",
-        description: "Interference patterns and digital decay.",
-        narrative: "Exploring the beauty in signal loss and static.",
-        looks: [],
-        details: []
-    },
-    {
-        slug: "fw23",
-        season: "FW23",
-        title: "MONOLITHIC SILENCE",
-        heroImage: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=2000&auto=format&fit=crop",
-        description: "Silence as a structural element. Form over function.",
-        narrative: "A return to silence. Heavy wools and silent silhouettes.",
-        looks: [],
+        looks: [
+            {
+                id: "street-01",
+                title: "Distressed Denim Jacket",
+                price: "₦35,000",
+                image: "/collections/street-legacy/IMG_20260109_123545.jpg",
+            },
+            {
+                id: "street-02",
+                title: "Graphic Tee",
+                price: "₦24,999",
+                image: "/collections/street-legacy/IMG_20260109_122721.jpg",
+            }
+        ],
         details: []
     },
     {

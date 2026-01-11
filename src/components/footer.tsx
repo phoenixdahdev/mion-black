@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-background px-6 py-24 text-foreground md:px-12">
@@ -63,6 +65,9 @@ export default function Footer() {
             <a href="#" className="hover:line-through">
               Returns
             </a>
+            <Link href="/archive" className="hover:line-through">
+              Archive
+            </Link>
           </div>
         </div>
       </div>

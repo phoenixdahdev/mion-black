@@ -2,34 +2,17 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
-const collections = [
-  {
-    season: "FW24",
-    title: "ECHOES OF BRUTALISM",
-    image:
-      "https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=2000&auto=format&fit=crop",
-  },
-  {
-    season: "SS24",
-    title: "STATIC NOISE",
-    image:
-      "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=2000&auto=format&fit=crop",
-  },
-  {
-    season: "FW23",
-    title: "MONOLITHIC SILENCE",
-    image:
-      "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=2000&auto=format&fit=crop",
-  },
-  {
-    season: "SS23",
-    title: "VOID STRUCTURE",
-    image:
-      "https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=2000&auto=format&fit=crop",
-  },
-];
+import { collections as allCollections } from "@/data/collections";
+
+const collections = allCollections.map((c) => ({
+  season: c.season,
+  title: c.title,
+  image: c.heroImage,
+  slug: c.slug,
+}));
 
 export default function Archive() {
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
@@ -44,7 +27,8 @@ export default function Archive() {
 
       <div className="relative z-10 flex flex-col">
         {collections.map((item) => (
-          <div
+          <Link
+            href={`/collections/${item.slug}`}
             key={item.season}
             className="group relative flex flex-col border-t border-foreground/10 px-6 py-8 transition-colors hover:bg-foreground/5 md:flex-row md:items-center md:justify-between md:py-12 md:px-12"
             onMouseEnter={() => setHoveredImage(item.image)}
@@ -73,7 +57,7 @@ export default function Archive() {
             <span className="hidden font-mono text-xs uppercase tracking-widest text-foreground opacity-0 transition-opacity group-hover:opacity-100 md:block">
               View Lookbook
             </span>
-          </div>
+          </Link>
         ))}
         <div className="border-t border-foreground/10" />
       </div>

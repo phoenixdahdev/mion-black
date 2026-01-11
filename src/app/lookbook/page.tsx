@@ -7,33 +7,21 @@ import Footer from "@/components/footer";
 
 const lookbookItems = [
   {
-    src: "https://images.unsplash.com/photo-1631428431420-c47b5d01c667?fm=jpg&q=60&w=3000",
-    alt: "ABSENCE OF COLOR",
-    text: "ABSENCE OF COLOR",
+    src: "/collections/hybrid-jersey/1001686981.jpg",
+    alt: "Hybrid Jersey Collection",
+    text: "HYBRID JERSEY",
     align: "left",
   },
   {
-    src: "https://images.unsplash.com/photo-1725121225009-3d7e049fb8a6?fm=jpg&q=60&w=3000",
-    alt: "FLUID DYNAMICS",
-    text: "FLUID DYNAMICS",
-    align: "right",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2864&auto=format&fit=crop",
-    alt: "STRUCTURE FORM",
-    text: "STRUCTURE FORM",
+    src: "/collections/street-legacy/IMG_20260109_123618.png",
+    alt: "Street Legacy",
+    text: "STREET LEGACY",
     align: "left",
   },
   {
-    src: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=2000&auto=format&fit=crop",
-    alt: "STATIC NOISE",
-    text: "STATIC NOISE",
-    align: "right",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=2000&auto=format&fit=crop",
-    alt: "MONOLITHIC",
-    text: "MONOLITHIC",
+    src: "/collections/mionblack-orginal/IMG_20260109_124133.png",
+    alt: "MIONBLACK ORIGINAL",
+    text: "ORIGINAL / COMING SOON",
     align: "left",
   },
 ];
@@ -63,7 +51,13 @@ function LookbookItem({
       className="relative h-[100vh] md:h-[120vh] w-full overflow-hidden"
     >
       <motion.div style={{ y }} className="absolute inset-0 h-[120%] w-full">
-        <Image src={src} alt={alt} fill className="object-cover" priority />
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          className="object-cover grayscale"
+          priority
+        />
         <div className="absolute inset-0 bg-black/20" />
       </motion.div>
       <div
