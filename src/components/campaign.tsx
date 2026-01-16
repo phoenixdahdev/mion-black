@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const IMAGES = [
@@ -79,12 +80,17 @@ export default function Campaign() {
             <br />
             The weight of the fabric mirrors the weight of ambition.
           </motion.p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="mt-8 border border-white/30 px-8 py-3 font-mono text-xs uppercase tracking-widest text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-black"
+          <Link
+            href="/campaign"
+            className="mt-8 inline-block"
           >
-            Explore Campaign
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="border border-white/30 px-8 py-3 font-mono text-xs uppercase tracking-widest text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-black"
+            >
+              Explore Campaign
+            </motion.button>
+          </Link>
         </div>
       </div>
     </section>
