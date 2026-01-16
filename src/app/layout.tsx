@@ -21,16 +21,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mion-black.fynix.dev"),
   title: {
-    default: "MION BLACK - Premium Fashion Brand",
+    default:
+      "MION BLACK - Premium Streetwear & Fashion Collections | Heritage & Contemporary Design",
     template: "%s | MION BLACK",
   },
-  description: "Clothing not just to be worn, but to be felt.",
+  description:
+    "Discover MION BLACK's exclusive streetwear collections. Premium heritage wear, hybrid-jersey designs, and contemporary fashion pieces. Clothing crafted to be felt, not just worn.",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "MION BLACK",
-    title: "MION BLACK",
-    description: "Clothing not just to be worn, but to be felt.",
+    title: "MION BLACK - Premium Streetwear & Fashion Collections",
+    description:
+      "Discover MION BLACK's exclusive streetwear collections. Premium heritage wear, hybrid-jersey designs, and contemporary fashion pieces. Clothing crafted to be felt, not just worn.",
     // images: [
     //   {
     //     url: "/og-image.png",
@@ -42,8 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MION BLACK",
-    description: "Clothing not just to be worn, but to be felt.",
+    title: "MION BLACK - Premium Streetwear & Fashion Collections",
+    description:
+      "Discover MION BLACK's exclusive streetwear collections. Premium heritage wear, hybrid-jersey designs, and contemporary fashion pieces. Clothing crafted to be felt, not just worn.",
   },
   robots: {
     index: true,
