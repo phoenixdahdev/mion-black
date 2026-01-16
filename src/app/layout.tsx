@@ -21,6 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "MION BLACK",
   description: "Clothing not just to be worn, but to be felt.",
+  icons: [{ rel: "icon", url: "/logo.png" }],
 };
 
 export default function RootLayout({
