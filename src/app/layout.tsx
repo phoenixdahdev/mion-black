@@ -26,14 +26,26 @@ export const metadata: Metadata = {
     template: "%s | MION BLACK",
   },
   description:
-    "Discover MION BLACK's exclusive streetwear collections. Premium heritage wear, hybrid-jersey designs, and contemporary fashion pieces. Clothing crafted to be felt, not just worn.",
+    "Exclusive MION BLACK streetwear: heritage wear, hybrid-jersey designs & contemporary fashion crafted to be felt, not just worn.",
+  keywords: [
+    "streetwear",
+    "fashion",
+    "premium clothing",
+    "heritage wear",
+    "hybrid-jersey",
+    "contemporary fashion",
+    "fashion collections",
+    "designer wear",
+    "exclusive clothing",
+    "MION BLACK",
+  ],
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "MION BLACK",
     title: "MION BLACK - Premium Streetwear & Fashion Collections",
     description:
-      "Discover MION BLACK's exclusive streetwear collections. Premium heritage wear, hybrid-jersey designs, and contemporary fashion pieces. Clothing crafted to be felt, not just worn.",
+      "Exclusive MION BLACK streetwear: heritage wear, hybrid-jersey designs & contemporary fashion crafted to be felt, not just worn.",
     // images: [
     //   {
     //     url: "/og-image.png",
@@ -47,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MION BLACK - Premium Streetwear & Fashion Collections",
     description:
-      "Discover MION BLACK's exclusive streetwear collections. Premium heritage wear, hybrid-jersey designs, and contemporary fashion pieces. Clothing crafted to be felt, not just worn.",
+      "Exclusive MION BLACK streetwear: heritage wear, hybrid-jersey designs & contemporary fashion crafted to be felt, not just worn.",
   },
   robots: {
     index: true,
