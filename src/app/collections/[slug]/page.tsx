@@ -116,7 +116,7 @@ export default function CollectionDetailPage() {
                 {collection.looks.map((look) => (
                   <div
                     key={look.id}
-                    className="group relative aspect-[3/4] cursor-pointer overflow-hidden bg-muted"
+                    className="group relative aspect-3/4 cursor-pointer overflow-hidden bg-muted"
                   >
                     <Image
                       src={look.image}
@@ -129,7 +129,7 @@ export default function CollectionDetailPage() {
                       <span className="font-mono text-xs uppercase tracking-widest text-white block">
                         {look.title}
                       </span>
-                      {look.price && (
+                      {'price' in look && look.price && (
                         <span className="font-mono text-xs text-white/70 block mt-1">
                           {look.price}
                         </span>
@@ -154,7 +154,7 @@ export default function CollectionDetailPage() {
                 {collection.runwayLooks.map((src, i) => (
                   <div
                     key={i}
-                    className="relative aspect-[2/3] w-[80vw] flex-shrink-0 snap-center overflow-hidden bg-muted md:w-[400px]"
+                    className="relative aspect-2/3 w-[80vw] shrink-0 snap-center overflow-hidden bg-muted md:w-100"
                   >
                     <Image
                       src={src}
@@ -231,7 +231,7 @@ export default function CollectionDetailPage() {
                 href={`/collections/${item.slug}`}
                 className="group block"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-muted mb-4">
+                <div className="relative aspect-3/4 overflow-hidden bg-muted mb-4">
                   <Image
                     src={item.heroImage}
                     alt={item.title}
