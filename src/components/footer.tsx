@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 export default function Footer() {
@@ -28,7 +26,7 @@ export default function Footer() {
               Socials
             </h4>
             <a
-              href="https://instagram.com/MIONBLACKLTD"
+              href="https://www.instagram.com/mionblack"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:line-through"
@@ -44,7 +42,7 @@ export default function Footer() {
               X
             </a>
             <a
-              href="https://tiktok.com/@MIONBLACKLTD"
+              href="https://www.tiktok.com/@mionblackltd"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:line-through"
