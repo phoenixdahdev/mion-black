@@ -129,7 +129,7 @@ export default function CollectionDetailPage() {
                       <span className="font-mono text-xs uppercase tracking-widest text-white block">
                         {look.title}
                       </span>
-                      {'price' in look && look.price && (
+                      {look.price && (
                         <span className="font-mono text-xs text-white/70 block mt-1">
                           {look.price}
                         </span>

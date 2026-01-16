@@ -135,27 +135,33 @@ export const collections = [
                 id: "orig-02",
                 title: "Origin Form",
                 image: "/collections/mionblack-orginal/IMG_20260109_124524.png",
+                price: null,
             },
             {
                 id: "orig-03",
                 title: "Black Edition",
                 image: "/collections/mionblack-orginal/IMG_20260109_124555.png",
+                price: null,
             },
             {
                 id: "orig-04",
                 title: "Genesis Layer",
                 image: "/collections/mionblack-orginal/IMG_20260109_124728.png",
+                price: null,
             },
             {
                 id: "orig-05",
                 title: "Primary Cut",
                 image: "/collections/mionblack-orginal/IMG_20260109_124818.png",
+                price: null,
             },
             {
                 id: "orig-06",
                 title: "Foundation Piece",
                 image: "/collections/mionblack-orginal/IMG_20260109_125004.png",
+                price: null,
             }
+
         ],
         details: []
     }
